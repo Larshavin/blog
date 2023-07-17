@@ -1,4 +1,22 @@
-baseURL = 'http://example.org/'
-languageCode = 'en-us'
-title = 'My New Hugo Site'
-theme = 'ananke'
+baseURL = 'http://kubesy.com/'
+languageCode = 'ko-kr'
+title = 'Geronimo!'
+theme= 'PaperMod'
+
+[params.homeInfoParams]
+Title = "I love Go and K8S"
+Content = "In the realm of astronomy once, but now becoming a dream-chasing gopher."
+
+[[params.socialIcons]]
+name = "github"
+url = "https://github.com/Larshavin"
+
+[params]
+ShowShareButtons = true
+ShowReadingTime = true
+ShowBreadCrumbs = true
+ShowPostNavLinks = true
+comments = true
+
+[outputs]
+home = [ "HTML", "RSS", "JSON" ]
