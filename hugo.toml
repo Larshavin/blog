@@ -3,13 +3,37 @@ languageCode = 'ko-kr'
 title = 'Geronimo!'
 theme= 'PaperMod'
 
-[params.homeInfoParams]
-Title = "I love Go and K8S"
-Content = "In the realm of astronomy once, but now becoming a dream-chasing gopher."
+[menu]
+[[menu.main]]
+    name = "Archive"
+    url = "archives"
+    weight = 2
+[[menu.main]]
+    name = 'Search'
+    url = "search/"
+    weight = 1
+[[menu.main]]
+    name = "Tags"
+    url = "tags/"
+    weight = 3
+
+  [params.homeInfoParams]
+  Title = "I love Go and K8S"
+  Content = """
+In the realm of astronomy once, 
+- but now becoming a dream-chasing gopher.
+"""
+
 
 [[params.socialIcons]]
 name = "github"
 url = "https://github.com/Larshavin"
+[[params.socialIcons]]
+name = "instagram"
+url = "https://www.instagram.com/larshavin/"
+[[params.socialIcons]]
+name = "Rss"
+url = "index.xml"
 
 [params]
 ShowShareButtons = true
