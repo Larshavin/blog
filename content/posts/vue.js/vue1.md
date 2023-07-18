@@ -70,7 +70,7 @@ VITE v4.4.4  ready in 624 ms
 
  [http://127.0.0.1:5174/](http://127.0.0.1:5174/)를 눌러 시작페이지를 살펴봅시다. 격려인사와 함께 뷰 프로젝트의 디폴트 화면이 등장합니다. 이 페이지에는 각종 피가되고 살이 되는 (하지만 제대로 보기는 귀찮은) 각종 문서들이 링크되어 있습니다. 뷰를 시작할 때 보면 좋은 것들 입니다. 
 
-![](/assets/images/vuejs/Untitled.png)
+![](/images/vuejs/Untitled.png)
 
 
 하지만 저는 고리타분하게 문서를 들여다보는 것보단, 뭐라도 뚝딱거리는 걸 좋아하는 편 (아마도 .. 나쁜 습관이라고 생각합니다) 입니다. 메인 화면을 고쳐봅시다!
@@ -301,10 +301,10 @@ import { RouterLink, RouterView } from 'vue-router'
       }" />
 ```
 
-![](/assets/images/vuejs/Untitled%201.png)
+![](/images/vuejs/Untitled%201.png)
 
 
-![](/assets/images/vuejs/Untitled%202.png)
+![](/images/vuejs/Untitled%202.png)
 
 
  둘의 차이가 확연하게 느껴지나요? 좋습니다. 저희는 이렇게 쉽게 커스텀 할 수 있는 편리한 도구를 얻었습니다! 하지만 이 도구들도 제대로 써야 맛있는 법이겠지요. 다음 두 파트를 지난 후에 실전으로 도구를 사용할 때가 오면 한 번 이야기를 더 진행해 봅시다.
@@ -313,7 +313,7 @@ import { RouterLink, RouterView } from 'vue-router'
 
  [이곳](https://www.notion.so/vue-js-ui-1-b7980fba44b94ee99bc897c550dc5722?pvs=21)에서 언급한 내용에 대해 설명드려야 할 때가 왔습니다. Vue는 기본적으로 build를 한 번 거치면, index.html 파일 하나(와 부가적인 무언가)가 생성됩니다. 웹서버에서는 이 index.html을 들고 있다가 실제 client들에게 전달 해줍니다. 그리고 클라이언트의 브라우저에서 화면들이 구성되기 시작합니다. 이 과정을 소위 CSR(Client Side Rendering)이라 부릅니다. 반대의 개념으로는 SSR(Server Side Rendering)이 있습니다.
 
-![](/assets/images/vuejs/Untitled%203.png)
+![](/images/vuejs/Untitled%203.png)
 
  그런데, 보통의 페이지를 생각해보면 홈페이지 하나에는 수많은 url 포인트가 존재합니다. 전통적인 (혹은 또한 현대적인) 방식으로 SSR을 하면, 각 url 마다 html 파일이 따로 따로 날라갑니다. 그러면 어떻게 html 파일 하나만 던져서 여러 url의 화면을 표현하는 걸까요? 
 
@@ -394,7 +394,7 @@ export const useCounterStore = defineStore('counter', () => {
 
 제 휴고 사이트의 겉모습은 다음과 같습니다.
 
-![](/assets/images/vuejs/Untitled%204.png)
+![](/images/vuejs/Untitled%204.png)
 
  맨 윗 단에 간단한 네비게이션바가 존재합니다. 그리고 x축의 여백이 꽤나 인상적인 가운데, 중간에 게시글 카드와 카드 위로 제가 설정 해놓은 간략한 설명 프로필이 존재합니다. 더해 핸드폰으로 화면을 켜보아도 잘 정렬된 반응형 페이지라는 것을 알 수 있습니다. 
 
