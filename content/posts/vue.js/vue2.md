@@ -260,7 +260,7 @@ const paths = ref([
 
  언젠가 제가 vue를 공부할까, react를 공부할까 했을 때, 이런 점이 vue의 간편한 요소라고 했던 [글](https://codingapple.com/unit/why-use-vue-over-react/)이 기억나네요.
 
- 여기서 [ref](https://v3-docs.vuejs-korea.org/api/reactivity-core.html#ref) 가 등장합니다. relative 성을 다루기 위해 사용하는 API 중 하나로, 화면 상에서 동적으로 변화시킬 변수들을 ref로 선언하는 것 입니다. 이 변수에 값에 접근하기 위해서는 `.value` 를 뒤에 붙여서 사용해야 합니다. 다만, **template** 쪽 에서 사용할 때는 그럴 필요가 없습니다. 예를 들면 `{{ var.value }}`가 아닌 `{{ var }}`만 사용해도 된다는 의미입니다.
+ 여기서 [ref](https://v3-docs.vuejs-korea.org/api/reactivity-core.html#ref) 가 등장합니다. reactive 성을 다루기 위해 사용하는 API 중 하나로, 화면 상에서 동적으로 변화시킬 변수들을 ref로 선언하는 것 입니다. 이 변수에 값에 접근하기 위해서는 `.value` 를 뒤에 붙여서 사용해야 합니다. 다만, **template** 쪽 에서 사용할 때는 그럴 필요가 없습니다. 예를 들면 `{{ var.value }}`가 아닌 `{{ var }}`만 사용해도 된다는 의미입니다.
 
  여기서 기능을 하나 더 추가 해봅시다. 사용자가 **RouterLink**에 해당하는 부분을 클릭 했을 때 해당하는 url이 바뀐다는 것은 저번 게시글에서 확인해 보았습니다. 그럼 이제 제가 해보고 싶은 것은 아래 사진처럼 특정 url로 들어갔을 때 해당하는 부분에만 강조를 주고 싶습니다.
 
